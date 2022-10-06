@@ -1,6 +1,6 @@
 function toDate(d) {
   // null is invalid
-  if (typeof d === null) {
+  if (d === null) {
     return new Date(NaN);
   }
   // undefined is today
