@@ -1,6 +1,6 @@
 {
   "name": "dates-kit",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "",
   "main": "index.js",
   "scripts": {
@@ -8,8 +8,16 @@
     "build": "node build"
   },
   "keywords": [],
-  "author": "",
+  "author": "full-stop",
   "license": "ISC",
+  "homepage": "https://github.com/full-stop/dates-kit#readme",
+  "bugs":{
+    "url": "https://github.com/full-stop/dates-kit/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/full-stop/dates-kit"
+  },
   "devDependencies": {
     "rollup": "^2.79.1"
   }
