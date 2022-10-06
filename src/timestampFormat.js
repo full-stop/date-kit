@@ -1,4 +1,4 @@
-function timeStampFormat(timestamp) {
+function timestampFormat(timestamp) {
   const ms = timestamp % 1000;
   const unix = (timestamp - ms) / 1000;
   const s = unix % 60;
@@ -15,4 +15,4 @@ function timeStampFormat(timestamp) {
   };
 }
 
-export default timeStampFormat;
+export default timestampFormat;
