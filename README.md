@@ -1,10 +1,10 @@
-> The package used to learn the date time related calculation algorithm (no bug is guaranteed).
+> The package used to learn the date time related calculation algorithm (Not guaranteed to be bug free).
 
 * **💪🏻 0 Dependencies**
-* **🎯 Function First**
 * **✅ Inmutable**
-* **🎉 All browsers supported**
+* **🎯 Function First**
 * **⚡️ Only supported ES6+**
+* **🎉 All browsers supported**
 
 ---
 
