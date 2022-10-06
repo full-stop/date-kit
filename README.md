@@ -1,10 +1,10 @@
 > The package used to learn the date time related calculation algorithm (no bug is guaranteed).
 
-* 💪🏻 0 Dependencies.
-* 🎯 Function First.
-* ✅ Inmutable.
-* 🎉 All browsers supported.
-* ⚡️ Only supported ES6+
+* **💪🏻 0 Dependencies**
+* **🎯 Function First**
+* **✅ Inmutable**
+* **🎉 All browsers supported**
+* **⚡️ Only supported ES6+**
 
 ---
 
@@ -13,7 +13,7 @@
 **In a browser**
 
 ```html
-<script src="ates-kit/dates-kit.js"></script>
+<script src="dates-kit/dates-kit.js"></script>
 ```
 
 **Using NPM**
