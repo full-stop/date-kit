@@ -2,6 +2,7 @@
   "name": "dates-kit",
   "version": "0.0.1",
   "description": "The package used to learn the date time related calculation algorithm (Not guaranteed to be bug free)",
+  "type": "module",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
