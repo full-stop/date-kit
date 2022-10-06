@@ -1,13 +1,13 @@
 {
   "name": "dates-kit",
-  "version": "0.0.5-0",
-  "description": "",
+  "version": "0.0.1",
+  "description": "The package used to learn the date time related calculation algorithm (Not guaranteed to be bug free)",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "node build"
   },
-  "keywords": [],
+  "keywords": ["date", "monthDiff", "Date", "datetime", "daysInMonth"],
   "author": "full-stop",
   "license": "ISC",
   "homepage": "https://github.com/full-stop/dates-kit#readme",
