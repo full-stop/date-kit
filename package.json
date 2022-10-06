@@ -5,10 +5,16 @@
   "type": "module",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "test": "NODE_OPTIONS=--experimental-vm-modules jest",
     "build": "node build"
   },
-  "keywords": ["date", "monthDiff", "Date", "datetime", "daysInMonth"],
+  "keywords": [
+    "date",
+    "Date",
+    "datetime",
+    "dates-utils",
+    "datetools"
+  ],
   "author": "full-stop",
   "license": "ISC",
   "homepage": "https://github.com/full-stop/dates-kit#readme",
@@ -20,6 +26,7 @@
     "url": "https://github.com/full-stop/dates-kit"
   },
   "devDependencies": {
+    "jest": "^29.1.2",
     "rollup": "^2.79.1"
   }
 }
