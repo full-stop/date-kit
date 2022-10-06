@@ -4,7 +4,6 @@
 * **✅ Inmutable**
 * **🎯 Function First**
 * **⚡️ Only supported ES6+**
-* **🎉 All browsers supported**
 
 ---
 
