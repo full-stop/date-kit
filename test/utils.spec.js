@@ -2,6 +2,7 @@ import padStart from "../src/utils/padStart";
 import rounding from "../src/utils/rounding";
 import isValid from "../src/utils/isValid";
 import toDate from "../src/utils/toDate";
+import get from "../src/utils/get";
 
 describe("Utils Unit Testing", () => {
   const date = toDate();
@@ -9,6 +10,16 @@ describe("Utils Unit Testing", () => {
   const dateAndNumber = toDate(Date.now());
   const dateAndUndefined = toDate(undefined);
   const dateAndNull = toDate(null);
+
+  it("Get", () => {
+    expect(get(dateAndString)).toMatchObject({ $Y: 2022, $M: 9, $D: 6 });
+    expect(get(dateAndNull)).toMatchObject({ $Y: NaN, $M: NaN, $D: NaN });
+  });
+
+  it("IsValid", () => {
+    expect(isValid(date)).toBeFalsy();
+    expect(isValid(dateAndNull)).toBeTruthy();
+  });
 
   it("toDate", () => {
     expect(date).toBeInstanceOf(Date);

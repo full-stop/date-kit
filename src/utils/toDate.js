@@ -4,7 +4,7 @@ function toDate(d) {
     return new Date(NaN);
   }
   // undefined is today
-  if (typeof d === undefined) {
+  if (typeof d === 'undefined') {
     return new Date();
   }
   if (d instanceof Date) {
