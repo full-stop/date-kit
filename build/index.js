@@ -6,7 +6,7 @@ const inputOptions = {
 const outOptions = {
     file:'date-kit.js',
     format:'iife',
-    name:'datesKit'
+    name:'dateKit'
 };
 
 (async () => {

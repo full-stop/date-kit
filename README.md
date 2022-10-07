@@ -22,11 +22,11 @@ npm i date-kit
 ```
 
 ```js
-import datesKit from "date-kit";
+import dateKit from "date-kit";
 import { monthDiff } from "date-kit";
 import daysInMonth from "date-kit/src/daysInMonth";
 
-datesKit.daysInMonth(Date.now());
+dateKit.daysInMonth(Date.now());
 monthDiff("2022/10/15", "2022/10/05", true);
 ```
 
