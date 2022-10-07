@@ -41,8 +41,7 @@ function monthDiff(a, b, float) {
     //防止 -0 的存在
     return -(wholeMonthDiff + adjust) || 0;
   } else {
-    const timestamp = Math.abs(last - anchor);
-    return [wholeMonthDiff, timestampFormat(timestamp)];
+    return { M: wholeMonthDiff, ...timestampFormat(last - anchor) };
   }
 }
 
