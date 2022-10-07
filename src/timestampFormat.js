@@ -1,4 +1,5 @@
-function timestampFormat(timestamp) {
+function timestampFormat(value) {
+  const timestamp = Math.max(value, 0);
   const ms = timestamp % 1000;
   const unix = (timestamp - ms) / 1000;
   const s = unix % 60;
