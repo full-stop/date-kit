@@ -1,4 +1,4 @@
-const rollup = require("rollup");
+import { rollup } from 'rollup';
 
 const inputOptions = {
     input:'./index.js',
@@ -10,6 +10,6 @@ const outOptions = {
 };
 
 (async () => {
-  const bundle = await rollup.rollup(inputOptions);
+  const bundle = await rollup(inputOptions);
   await bundle.write(outOptions);
 })();
