@@ -12,19 +12,19 @@
 **In a browser**
 
 ```html
-<script src="dates-kit/dates-kit.js"></script>
+<script src="date-kit/date-kit.js"></script>
 ```
 
 **Using NPM**
 
 ```bash
-npm i dates-kit
+npm i date-kit
 ```
 
 ```js
-import datesKit from "dates-kit";
-import { monthDiff } from "dates-kit";
-import daysInMonth from "dates-kit/src/daysInMonth";
+import datesKit from "date-kit";
+import { monthDiff } from "date-kit";
+import daysInMonth from "date-kit/src/daysInMonth";
 
 datesKit.daysInMonth(Date.now());
 monthDiff("2022/10/15", "2022/10/05", true);

@@ -4,7 +4,7 @@ const inputOptions = {
     input:'./index.js',
 };
 const outOptions = {
-    file:'dates-kit.js',
+    file:'date-kit.js',
     format:'iife',
     name:'datesKit'
 };
