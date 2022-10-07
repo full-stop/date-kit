@@ -1,5 +1,5 @@
 {
-  "name": "date-kit",
+  "name": "date-toolkit",
   "version": "0.0.1",
   "description": "The package used to learn the date time related calculation algorithm (Not guaranteed to be bug free)",
   "type": "module",
@@ -17,13 +17,13 @@
   ],
   "author": "full-stop",
   "license": "ISC",
-  "homepage": "https://github.com/full-stop/date-kit#readme",
+  "homepage": "https://github.com/full-stop/date-toolkit#readme",
   "bugs": {
-    "url": "https://github.com/full-stop/date-kit/issues"
+    "url": "https://github.com/full-stop/date-toolkit/issues"
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/full-stop/date-kit"
+    "url": "https://github.com/full-stop/date-toolkit"
   },
   "devDependencies": {
     "dayjs": "^1.11.5",

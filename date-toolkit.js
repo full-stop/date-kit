@@ -1,13 +1,13 @@
-var datesKit = (function (exports) {
+var dateToolkit = (function (exports) {
   'use strict';
 
   function toDate(d) {
     // null is invalid
-    if (typeof d === null) {
+    if (d === null) {
       return new Date(NaN);
     }
     // undefined is today
-    if (typeof d === undefined) {
+    if (typeof d === 'undefined') {
       return new Date();
     }
     if (d instanceof Date) {
@@ -31,12 +31,12 @@ var datesKit = (function (exports) {
   }
 
   function timestampFormat(timestamp) {
-    const ms = timestamp % 1000;
+    const ms = timestamp % 1000 || 0;
     const unix = (timestamp - ms) / 1000;
-    const s = unix % 60;
-    const m = ((unix - s) / 60) % 60;
-    const h = (((unix - s) / 60 - m) / 60) % 24;
-    const d = (((unix - s) / 60 - m) / 60 - h) / 24;
+    const s = unix % 60 || 0;
+    const m = ((unix - s) / 60) % 60 || 0;
+    const h = (((unix - s) / 60 - m) / 60) % 24 || 0;
+    const d = (((unix - s) / 60 - m) / 60 - h) / 24 || 0;
 
     return {
       d,
@@ -86,8 +86,7 @@ var datesKit = (function (exports) {
       //防止 -0 的存在
       return -(wholeMonthDiff + adjust) || 0;
     } else {
-      const timestamp = Math.abs(last - anchor);
-      return [wholeMonthDiff, timestampFormat(timestamp)];
+      return { M: wholeMonthDiff, ...timestampFormat(last - anchor) };
     }
   }
 

@@ -4,9 +4,9 @@ const inputOptions = {
     input:'./index.js',
 };
 const outOptions = {
-    file:'date-kit.js',
+    file:'date-toolkit.js',
     format:'iife',
-    name:'dateKit'
+    name:'dateToolkit'
 };
 
 (async () => {
