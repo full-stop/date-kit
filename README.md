@@ -34,4 +34,6 @@ monthDiff("2022/10/15", "2022/10/05", true);
 
 - **`monthDiff(startDate, endDate, float)`** : `float` is boolean type
 - **`daysInMonth(date)`**
+- **`startOf(date, unit, isStartOf)`**
+- **`endOf(date, unit)`**
 - **`timestampFormat(timestamp)`**
