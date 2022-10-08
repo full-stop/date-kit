@@ -33,7 +33,8 @@ monthDiff("2022/10/15", "2022/10/05", true);
 ## API
 
 - **`monthDiff(startDate, endDate, float)`** : `float` is boolean type
-- **`daysInMonth(date)`**
-- **`startOf(date, unit, isStartOf)`**
-- **`endOf(date, unit)`**
-- **`timestampFormat(timestamp)`**
+- **`daysInMonth(date)`** : get days in the month;
+- **`startOf(date, unit, isStartOf)`** get start date and time
+- **`endOf(date, unit)`** :get end date and time.
+- **`timestampFormat(timestamp)`** : timestamp format, up to days.
+- **`dayOfYear(date)`** : get the day of the year

@@ -174,6 +174,14 @@ var dateToolkit = (function (exports) {
     return startOf(d, unit, false);
   }
 
+  function dayOfYear(d) {
+    const date = toDate(d);
+    return (
+      Math.round((startOf(date, units.D) - startOf(date, units.Y)) / 864e5) + 1
+    );
+  }
+
+  exports.dayOfYear = dayOfYear;
   exports.daysInMonth = daysInMonth;
   exports.endOf = endOf;
   exports.monthDiff = monthDiff;
