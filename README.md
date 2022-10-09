@@ -38,3 +38,4 @@ monthDiff("2022/10/15", "2022/10/05", true);
 - **`endOf(date, unit)`** :get end date and time.
 - **`timestampFormat(timestamp)`** : timestamp format, up to days.
 - **`dayOfYear(date)`** : get the day of the year
+- **`isLeapYear(date)`** : whether it is a leap year

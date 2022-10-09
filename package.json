@@ -1,6 +1,6 @@
 {
   "name": "date-toolkit",
-  "version": "0.2.2",
+  "version": "0.3.2",
   "description": "The package used to learn the date time related calculation algorithm (Not guaranteed to be bug free)",
   "type": "module",
   "main": "index.js",
@@ -13,7 +13,12 @@
     "datetime",
     "dates-utils",
     "date-tools",
-    "datekit"
+    "datekit",
+    "isLeapYear",
+    "daysInMonth",
+    "dayOfYear",
+    "timestamp formatter",
+    "monthDiff"
   ],
   "author": "full-stop",
   "license": "ISC",
