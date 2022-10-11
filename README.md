@@ -40,3 +40,12 @@ monthDiff("2022/10/15", "2022/10/05", true);
 - **`monthDiff(startDate, endDate, float?)`** : `float` is boolean type.
 - **`isLeapYear(date)`** : whether it is a leap year.
 - **`isEqual(startDate, endDate, unit?)`** : compare whether two dates in a specific unit are equal.
+
+## ChangeLogs
+
+* v0.4.2 - add `isEqual` method. [2022/10/11]
+* v0.3.2 - add `isLeapYear` method [2022/10/09]
+* v0.2.2 - add `dayOfYear` and `startOf`,`endOf` methods [2022/10/08] 
+* v0.1.2 - add `monthDiff` method.
+* v0.1.2 - modify package.json.
+* v0.0.1 - inital project.
