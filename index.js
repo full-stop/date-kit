@@ -5,3 +5,4 @@ export { default as startOf } from "./src/startOf";
 export { default as endOf } from "./src/endOf";
 export { default as dayOfYear } from "./src/dayOfYear";
 export { default as isLeapYear } from "./src/isLeapYear";
+export { default as isEqual } from "./src/isEqual";
