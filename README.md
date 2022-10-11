@@ -46,6 +46,6 @@ monthDiff("2022/10/15", "2022/10/05", true);
 * **v0.4.2** - add `isEqual` method. [2022/10/11]
 * **v0.3.2** - add `isLeapYear` method. [2022/10/09]
 * **v0.2.2** - add `dayOfYear` and `startOf`,`endOf` methods. [2022/10/08] 
-* **v0.1.2** - add `monthDiff` method. [2022/10/07] 
-* **v0.1.2** - modify package.json.[2022/10/06] 
+* **v0.1.2** - add `monthDiff` and `daysInMonth`, `timestampFormat` methods. [2022/10/07] 
+* **v0.0.2** - modify package.json.[2022/10/06] 
 * **v0.0.1** - inital project.[2022/10/06] 
