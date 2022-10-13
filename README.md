@@ -32,6 +32,7 @@ monthDiff("2022/10/15", "2022/10/05", true);
 
 ## API
 
+- **`add(date, value, unit?)`** operation date by unit.
 - **`startOf(date, unit?, isStartOf?)`** get start date and time.
 - **`endOf(date, unit?)`** :get end date and time.
 - **`timestampFormat(timestamp)`** : timestamp format, up to days.
@@ -41,8 +42,9 @@ monthDiff("2022/10/15", "2022/10/05", true);
 - **`isLeapYear(date)`** : whether it is a leap year.
 - **`isEqual(startDate, endDate, unit?)`** : compare whether two dates in a specific unit are equal.
 
-## ChangeLogs
+## changelogs
 
+* **v0.5.3** - add `add` method. [2022/10/13]
 * **v0.4.3** - modify `README.md` add `changeLogs` field. [2022/10/11]
 * **v0.4.2** - add `isEqual` method. [2022/10/11]
 * **v0.3.2** - add `isLeapYear` method. [2022/10/09]
