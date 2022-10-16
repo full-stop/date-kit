@@ -2,6 +2,7 @@ export const Invalid = "Invalid Date";
 
 export const units = {
   Y: "year",
+  Q : 'quarter',
   M: "month",
   d: "day",
   D: "date",

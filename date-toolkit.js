@@ -105,6 +105,7 @@ var dateToolkit = (function (exports) {
 
   const units = {
     Y: "year",
+    Q : 'quarter',
     M: "month",
     d: "day",
     D: "date",
@@ -200,7 +201,7 @@ var dateToolkit = (function (exports) {
   }
 
   /**
-   * 1. 年、月、日的变更基于原生 API 实现，所以不支持非整数的值（因为不同年月下的日是不同的，所以你无法限定半年是闰年的半年还是平年的半年；半个月也难确定是 15 天还是 14 天）。
+   * 1. 年、月、日的变更基于原生 API 实现，所以不支持非整数的值（因为不同年月下的日是不同的，所以你无法限定半年是闰年的半年还是平年的半年；半个月也难确定是 15 天还是 14 天），周是例外。
    * 2. 年、月的变更涉及到日期的进位，而日的进位又不是固定的，它又会受平年、闰年、大小月的影响，所以在变更年、月时，会保留当前日，如果当前日大于变更后日期当月的最大日，则取两者最小的值。
    *    也就是说 2000 年 2月 29 日 新增一年后，就是 2001 年 2 月 28 日，不论是增加年还是月，日应该都是不变的，它理应是这个月相同的一天（月初、月末等）。
    * 3. 时、分、秒基于时间戳自动增加，所以支持小数。
@@ -238,14 +239,62 @@ var dateToolkit = (function (exports) {
     }
   }
 
+  function subtract(date, value, unit) {
+    return add(date, value * -1, unit);
+  }
+
+  const rounding = (n) => (n <= 0 ? Math.ceil(n) || 0 : Math.floor(n));
+
+  function diff(date, diffDate, unit, float = false) {
+    const d = toDate(date);
+    const diff = toDate(diffDate);
+    const u = pertty(unit);
+    const diffTimestamp = d - diff;
+    const diffMonth = monthDiff(d, diffDate, true);
+
+    let result;
+    switch (u) {
+      case units.Y:
+        result = diffMonth / 12;
+        break;
+      case units.M:
+        result = diffMonth;
+        break;
+      case units.Q:
+        result = diffMonth / 3;
+        break;
+      case units.W:
+        result = diffTimestamp / (7 * 24 * 60 * 60 * 1000);
+        break;
+      case units.D:
+        result = diffTimestamp / (24 * 60 * 60 * 1000);
+        break;
+      case units.H:
+        result = diffTimestamp / (60 * 60 * 1000);
+        break;
+      case units.m:
+        result = diffTimestamp / (60 * 1000);
+        break;
+      case units.s:
+        result = diffTimestamp / 1000;
+        break;
+      default:
+        result = diffTimestamp;
+    }
+
+    return float ? result : rounding(result);
+  }
+
   exports.add = add;
   exports.dayOfYear = dayOfYear;
   exports.daysInMonth = daysInMonth;
+  exports.diff = diff;
   exports.endOf = endOf;
   exports.isEqual = isEqual;
   exports.isLeapYear = isLeapYear;
   exports.monthDiff = monthDiff;
   exports.startOf = startOf;
+  exports.subtract = subtract;
   exports.timestampFormat = timestampFormat;
 
   Object.defineProperty(exports, '__esModule', { value: true });
