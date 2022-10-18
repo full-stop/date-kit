@@ -1,12 +1,14 @@
-import { rollup } from 'rollup';
+import { rollup } from "rollup";
+import { terser } from "rollup-plugin-terser";
 
 const inputOptions = {
-    input:'./index.js',
+  input: "./index.js",
+  plugins: [terser()],
 };
 const outOptions = {
-    file:'date-toolkit.js',
-    format:'iife',
-    name:'dateToolkit'
+  file: "date-toolkit.min.js",
+  format: "iife",
+  name: "dateToolkit",
 };
 
 (async () => {

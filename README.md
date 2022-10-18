@@ -32,8 +32,8 @@ monthDiff("2022/10/15", "2022/10/05", true);
 
 ## API
 
-- **`add(date, value, unit?)`** operation date by unit.
-- **`subtract(date, value, unit?)`** operation date by unit.
+- **`add(date, value, unit?)`** date increase by unit.
+- **`subtract(date, value, unit?)`** date decrease by unit.
 - **`startOf(date, unit?, isStartOf?)`** get start date and time.
 - **`endOf(date, unit?)`** :get end date and time.
 - **`diff(date, diffDate, unit?)`** : compare two dates by unit.
@@ -46,6 +46,7 @@ monthDiff("2022/10/15", "2022/10/05", true);
 
 ## changelogs
 
+* **v0.6.4** - compressed code and modify README.md [2022/10/18]
 * **v0.6.3** - add `diff`, `subtract` methods. [2022/10/16]
 * **v0.5.3** - add `add` method. [2022/10/13]
 * **v0.4.3** - modify `README.md` add `changeLogs` field. [2022/10/11]
