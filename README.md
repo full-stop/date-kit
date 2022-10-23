@@ -48,16 +48,25 @@ monthDiff("2022/10/15", "2022/10/05", true);
 
 ## changelogs
 
-* **[v0.7.4]** 
+* **[v0.7.4]**  - 2022/10/23
     * add `quarter` and `getSameMonthOfQuarter` methods. 
     * `startOf`、`endOf`、`add`、`subtract` supports quarter function.
-* **v0.6.4** - compressed code and modify README.md [2022/10/18]
-* **v0.6.3** - add `diff`, `subtract` methods. [2022/10/16]
-* **v0.5.3** - add `add` method. [2022/10/13]
-* **v0.4.3** - modify `README.md` add `changeLogs` field. [2022/10/11]
-* **v0.4.2** - add `isEqual` method. [2022/10/11]
-* **v0.3.2** - add `isLeapYear` method. [2022/10/09]
-* **v0.2.2** - add `dayOfYear` and `startOf`,`endOf` methods. [2022/10/08] 
-* **v0.1.2** - add `monthDiff` and `daysInMonth`, `timestampFormat` methods. [2022/10/07] 
-* **v0.0.2** - modify package.json.[2022/10/06] 
-* **v0.0.1** - inital project.[2022/10/06] 
+* **[v0.6.4]** - 2022/10/18
+    * compressed code and modify `README.md` 
+* **[v0.6.3]** - 2022/10/16
+    * add `diff`, `subtract` methods. 
+* **[v0.5.3]** - 2022/10/13
+    * add `add` method.
+* **[v0.4.3]** - 2022/10/11
+    * modify `README.md` add `changeLogs` field.
+* **[v0.4.2]** - 2022/10/11
+    * add `isEqual` method. 
+* **[v0.3.2]** - 2022/10/09
+    * add `isLeapYear` method.
+* **[v0.2.2]** - 2022/10/08
+    * add `dayOfYear` and `startOf`,`endOf` methods.
+* **[v0.1.2]** - 2022/10/07
+    * add `monthDiff` and `daysInMonth`, `timestampFormat` methods. 
+* **[v0.0.1 - v0.0.2]** - 2022/10/06]
+    * modify package.json.  
+    * inital project.
