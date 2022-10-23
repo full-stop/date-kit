@@ -2,11 +2,16 @@ import startOf from "../src/startOf";
 import endOf from "../src/endOf";
 import dayjs from "dayjs";
 
+import quarterOfYear from "dayjs/plugin/quarterOfYear";
+
+dayjs.extend(quarterOfYear);
+
 describe("StartOf And EndOf Unit Testing", () => {
   it("StartOf EndOf Year ... with s and upper case", () => {
     const testArr = [
       "Year",
       "year",
+      "quarter",
       "YearS",
       "month",
       "day",
@@ -16,21 +21,21 @@ describe("StartOf And EndOf Unit Testing", () => {
       "second",
     ];
     testArr.forEach((d) => {
-      expect(startOf(dayjs().valueOf(), d).valueOf()).toBe(
-        dayjs().startOf(d).valueOf()
+      expect(startOf('2022/02/01', d).valueOf()).toBe(
+        dayjs('2022/02/01').startOf(d).valueOf()
       );
-      expect(endOf(dayjs().valueOf(), d).valueOf()).toBe(
-        dayjs().endOf(d).valueOf()
+      expect(endOf('2022/02/01', d).valueOf()).toBe(
+        dayjs('2022/02/01').endOf(d).valueOf()
       );
     });
   });
 
   it("StartOf EndOf Other -> no change", () => {
-    expect(startOf(dayjs().valueOf(), "otherString").valueOf()).toBe(
-      dayjs().startOf("otherString").valueOf()
+    expect(startOf('2022/02/01', "otherString").valueOf()).toBe(
+      dayjs('2022/02/01').startOf("otherString").valueOf()
     );
-    expect(endOf(dayjs().valueOf(), "otherString").valueOf()).toBe(
-      dayjs().endOf("otherString").valueOf()
+    expect(endOf('2022/02/01', "otherString").valueOf()).toBe(
+      dayjs('2022/02/01').endOf("otherString").valueOf()
     );
   });
 

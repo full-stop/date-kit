@@ -12,7 +12,7 @@
 **In a browser**
 
 ```html
-<script src="date-toolkit/date-toolkit.js"></script>
+<script src="date-toolkit/date-toolkit.min.js"></script>
 ```
 
 **Using NPM**
@@ -41,11 +41,16 @@ monthDiff("2022/10/15", "2022/10/05", true);
 - **`daysInMonth(date)`** : get days in the month.
 - **`dayOfYear(date)`** : get the day of the year.
 - **`monthDiff(startDate, endDate, float?)`** : `float` is boolean type.
+- **`quarter(date?)`** : get quarter of the date. (default current date)
+- **`getSameMonthQuarter(date, quarter)`** : get the month with the same position in the specified quarter.
 - **`isLeapYear(date)`** : whether it is a leap year.
 - **`isEqual(startDate, endDate, unit?)`** : compare whether two dates in a specific unit are equal.
 
 ## changelogs
 
+* **[v0.7.4]** 
+    * add `quarter` and `getSameMonthOfQuarter` methods. 
+    * `startOf`、`endOf`、`add`、`subtract` supports quarter function.
 * **v0.6.4** - compressed code and modify README.md [2022/10/18]
 * **v0.6.3** - add `diff`, `subtract` methods. [2022/10/16]
 * **v0.5.3** - add `add` method. [2022/10/13]

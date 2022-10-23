@@ -18,14 +18,15 @@ function add(date, value, unit) {
   const n = Number(value);
   const { $Y, $M, $D } = get(d);
 
-  if (u === units.Y || u === units.M) {
+  if (u === units.Y || u === units.M || u === units.Q) {
     const method = {
-      [units.Y]: ["setFullYear", $Y],
-      [units.M]: ["setMonth", $M],
+      [units.Y]: ["setFullYear", $Y + n],
+      [units.M]: ["setMonth", $M + n],
+      [units.Q]: ["setMonth", $M + n * 3],
     }[u];
 
     d.setDate(1);
-    d[method[0]](method[1] + n);
+    d[method[0]](method[1]);
     d.setDate(Math.min($D, daysInMonth(d)));
     return d;
   } else if (u === units.D || u === units.W) {

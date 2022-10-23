@@ -1,5 +1,8 @@
 import add from "../src/add";
 import dayjs from "dayjs";
+import quarterOfYear from "dayjs/plugin/quarterOfYear";
+
+dayjs.extend(quarterOfYear);
 
 describe("Add Unit Testing", () => {
   it("add year", () => {
@@ -17,6 +20,16 @@ describe("Add Unit Testing", () => {
 
     expect(add("2000/02/29", 4, "year").valueOf()).toBe(
       dayjs("2000/02/29").add(4, "year").valueOf()
+    );
+  });
+
+  it("add quarter", () => {
+    expect(add("1999/02/28", 0, "quarter").valueOf()).toBe(
+      dayjs("1999/02/28").add(0, "quarter").valueOf()
+    );
+
+    expect(add("1999/02/28", 1, "quarter").valueOf()).toBe(
+      dayjs("1999/02/28").add(1, "quarter").valueOf()
     );
   });
 
