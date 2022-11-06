@@ -32,6 +32,7 @@ monthDiff("2022/10/15", "2022/10/05", true);
 
 ## API
 
+- **`format(date, format?)`** format date, default: `YYYY-MM-DD HH:mm:ss`.
 - **`add(date, value, unit?)`** date increase by unit.
 - **`subtract(date, value, unit?)`** date decrease by unit.
 - **`startOf(date, unit?, isStartOf?)`** get start date and time.
@@ -48,6 +49,8 @@ monthDiff("2022/10/15", "2022/10/05", true);
 
 ## changelogs
 
+* **[v0.8.4]**  - 2022/11/06
+    * add `format` method.
 * **[v0.7.4]**  - 2022/10/23
     * add `quarter` and `getSameMonthOfQuarter` methods. 
     * `startOf`、`endOf`、`add`、`subtract` supports quarter function.
