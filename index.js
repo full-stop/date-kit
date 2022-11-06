@@ -11,3 +11,4 @@ export { default as add } from "./src/add";
 export { default as diff } from "./src/diff";
 export { default as quarter } from "./src/quarter";
 export { default as getSameMonthOfQuarter } from "./src/getSameMonthOfQuarter";
+export { default as format } from "./src/format";

@@ -67,6 +67,6 @@ monthDiff("2022/10/15", "2022/10/05", true);
     * add `dayOfYear` and `startOf`,`endOf` methods.
 * **[v0.1.2]** - 2022/10/07
     * add `monthDiff` and `daysInMonth`, `timestampFormat` methods. 
-* **[v0.0.1 - v0.0.2]** - 2022/10/06]
+* **[v0.0.1 - v0.0.2]** - 2022/10/06
     * modify package.json.  
     * inital project.
