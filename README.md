@@ -24,6 +24,7 @@ npm i date-toolkit
 ```js
 import dateToolkit from "date-toolkit";
 import { monthDiff } from "date-toolkit";
+import daysInMonth from "date-toolkit/src/daysInMonth";
 
 dateToolkit.daysInMonth(Date.now());
 monthDiff("2022/10/15", "2022/10/05", true);
